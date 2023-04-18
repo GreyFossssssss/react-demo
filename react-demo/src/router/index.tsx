@@ -1,6 +1,6 @@
 import React, {Suspense, lazy} from 'react';
 
-const demo = lazy(() => import(@/views/demo))
+const demo = lazy(() => import(@/views/demo/index))
 
 
 function Fallback() {

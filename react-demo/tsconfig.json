@@ -4,6 +4,7 @@
         "outDir": "/dist/",
         "sourceMap": true,
         "module": "es2022",
+        "moduleResolution": "node",
         "allowSyntheticDefaultImports": true, // import忽略报错
         "strict": true,
         "noImplicitReturns": true,
@@ -19,7 +20,7 @@
     "include": [
         "./src/**/*",
         "./externals.d.ts",
-        "react-demo/global.d.ts"
+        "./global.d.ts"
     ],
     "exclude": ["node_modules", "src/@tyoes/**/*", "*.less"]
 }
