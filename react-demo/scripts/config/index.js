@@ -6,8 +6,8 @@ module.exports = {
         },
         mode: 'development',
         publicPath: '/',
-        src: './src',
-        dist: './dist'
+        src: './src/',
+        dist: './dist/'
     },
     prod: {
         mode: 'production',

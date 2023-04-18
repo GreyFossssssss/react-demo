@@ -4,7 +4,7 @@ import ReactDom from 'react-dom'
 import { HashRouter } from 'react-router-dom'
 import zhCN from 'antd/lib/locale/zh_CN'
 import App from './app'
-import {ConfigProvider} from 'antd'
+import { ConfigProvider } from 'antd'
 
 ReactDom.render(
     <HashRouter>

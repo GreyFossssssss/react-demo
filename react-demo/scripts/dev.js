@@ -3,6 +3,7 @@ const config = require('./config').dev
 const webpackConfig = require('./webpack/webpack.dev.conf.js')
 const Webpack = require('webpack')
 const open = require('open')
+const Koa = require('koa')
 
 
 const webpackDevMiddleware = require('webpack-dev-middleware')
