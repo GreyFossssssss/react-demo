@@ -21,8 +21,7 @@ module.exports = {
         new WebpackBar()
     ],
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.(js|jsx|ts|tsx)/,
                 loader: 'babel-loader'
             },
@@ -33,11 +32,12 @@ module.exports = {
                     {
                         loader: "css-loader",
                         options: {
-                        importLoaders: 1,
+                            importLoaders: 1,
                         },
                     }, {
                         loader: "postcss-loader",
-                    }]
+                    }
+                ]
             },
             {
                 test: /\.(less)$/,
@@ -57,28 +57,24 @@ module.exports = {
             },
             {
                 test: /\.(bmp|gif|png|jpe?g)$/,
-                use: [
-                  {
+                use: [{
                     loader: "url-loader",
                     options: {
-                      limit: 10 * 1024,
-                      name: "[name].[contenthash:8].[ext]",
-                      outputPath: "assets/images",
+                        limit: 10 * 1024,
+                        name: "[name].[contenthash:8].[ext]",
+                        outputPath: "assets/images",
                     },
-                  },
-                ],
+                }, ],
             },
             {
                 test: /\.(ttf|woff|woff2|eot|otf)$/,
-                use: [
-                    {
+                use: [{
                     loader: "url-loader",
                     options: {
                         name: "[name].[contenthash:8].[ext]",
                         outputPath: "assets/fonts",
                     },
-                    },
-                ],
+                }, ],
             }
         ]
     },
@@ -92,8 +88,8 @@ module.exports = {
             })
         ]
     },
-    externals: {
-        react: 'react',
-        'react-dom' : 'ReactDOM'
-    }
+    // externals: {
+    //     react: 'react',
+    //     'react-dom' : 'ReactDOM'
+    // }
 }
