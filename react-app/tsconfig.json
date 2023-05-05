@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "baseUrl":  "src",
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "strict": true,
+        "noImplicitReturns": true, // 开启隐式返回类型检查
+        "noImplicitAny": false, // 禁止使用 any 类型
+        "allowSyntheticDefaultImports": true, // 允许导入非默认导出的模块时自动生成默认导出
+        "moduleResolution": "node",
+        "target": "es5", //编译后的 JavaScript 版本
+        "allowJs": true,
+        "jsx": "react", // 指定 JSX 语法的编译方式，可以为 preserve、react-native 或 react
+        "paths": {
+            "@/*" : ["src/*"]
+        }
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": ["node_modules", "*.less"]
+}
